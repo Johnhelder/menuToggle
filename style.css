@@ -1,0 +1,53 @@
+body {
+  background-color: #ccc;
+}
+
+aside {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+#menu-opener {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30px;
+  width: 40px;
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.menu-bar {
+  height: 5px;
+  width: 100%;
+  background-color: #888;
+}
+
+#menu-area {
+  height: 100vh;
+  width: 0;
+  background-color: #ccc;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all ease 0.5s;
+}
+#menu-area ul,
+#menu-area li {
+  list-style: none;
+  padding: 0;
+}
+#menu-area li {
+  display: block;
+  color: #555;
+  padding: 10px;
+  cursor: pointer;
+}
+#menu-area li:hover {
+  background-color: #ddd;
+}
+
+.menu-opened {
+  width: 200px !important;
+}
